@@ -77,8 +77,31 @@
  * Función que permite generar una función PWM a través de un PIN digital con
  * capacidad para ello.  Los pines digitales con posible salida PWM son los
  * pines 3, 5, 6, 9, 10, y 11.
+ *
+ *
+ * - void servo.attach(pin)
  * 
+ * Parámetros: 
  * 
+ * - pin: identificador del pin digital al que está conectado el servo. El pin
+ *   ha de tener capacidad de generar un PWM.
+ *
+ * Función que asocia el objeto Servo definido globalmente con el pin al que el
+ * corresponiente motor está conectado. Esta función ha de ser llamada durante
+ * el proceso de inicilización.
+ * 
+ *
+ * - void servo.write(angle)
+ * 
+ * Parámetros: 
+ * 
+ * - angle: el valor del ángulo que debe de tomar el servo. Acepta valores
+ *   entre 0 y 180.
+ *
+ * Función que escribe un valor en el servo. Dicho valor será el ángulo en
+ * grados que tiene que adoptar el servo.
+ *
+ *
  */
 
 #include <Servo.h>
