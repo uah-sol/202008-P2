@@ -70,7 +70,7 @@
  * 
  * Parámetros: 
  * 
- * - pin: identificador del pin digital que se va a escribir. Este PIN debe 
+ * - pin: identificador del pin digital que se va a escribir.
  * - value: el ciclo de trabajo, entre 0 (siempre apagado) y 255 (siempre
  *   encendido).
  * 
